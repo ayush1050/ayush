@@ -1,0 +1,156 @@
+/* styles.css */
+
+/* Root Variables for Theme Colors */
+:root {
+    --deep-brown: #6D4C41;   /* Stability & Wisdom */
+    --warm-beige: #D7CCC8;   /* Soft & Natural */
+    --serene-blue: #5C6BC0;  /* Calm & Tranquil */
+    --muted-gold: #FFC107;   /* Enlightenment */
+    --soft-white: #FAFAFA;   /* Clean & Minimal */
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: var(--warm-beige);
+    color: var(--deep-brown);
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--serene-blue);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Tab Navigation */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .tab-button.active {
+    background-color: var(--muted-gold);
+    color: var(--soft-white);
+  }
+  
+  .tab-button.inactive {
+    background-color: var(--deep-brown);
+    color: var(--soft-white);
+  }
+  
+  .tab-button:hover {
+    background-color: var(--serene-blue);
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: var(--soft-white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    margin: 5px;
+  }
+  
+  .btn.start {
+    background-color: var(--serene-blue);
+    color: white;
+  }
+  
+  .btn.capture {
+    background-color: var(--muted-gold);
+    color: white;
+  }
+  
+  .btn.stop {
+    background-color: var(--deep-brown);
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Video Container */
+  .video-container {
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Image & Analysis */
+  .result-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analysis-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--deep-brown);
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--deep-brown);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  

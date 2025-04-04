@@ -1,27 +1,46 @@
 {
   "name": "face-detection-app",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A face detection application that allows users to try on different glasses styles in augmented reality.",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.2.0"
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/face_mesh": "^0.4.1633559619",
+    "@react-three/drei": "^8.20.2",
+    "@react-three/fiber": "^8.18.0",
+    "@tensorflow-models/face-landmarks-detection": "^1.0.6",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.22.0",
+    "@tensorflow/tfjs-core": "^4.22.0",
+    "next": "^14.2.24",
+    "node-modules": "^1.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-tabs": "^6.1.0",
+    "react-webcam": "^7.2.0",
+    "three": "^0.152.2"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.0",
-    "@eslint/eslintrc": "^3"
-  }
+    "@types/node": "22.13.10",
+    "@types/react-webcam": "^1.1.0",
+    "@types/three": "^0.174.0",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "^14.0.0",
+    "typescript": "^5.2.2",
+    "@react-native-community/cli": "latest"
+  },
+  "keywords": [
+    "face-detection",
+    "augmented-reality",
+    "glasses",
+    "3d-models"
+  ],
+  "author": "Ayush Kumar",
+  "license": "MIT"
 }
